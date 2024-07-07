@@ -22,6 +22,9 @@ jobs:
         with:
           command: clippy
           args: --all-targets --all-features
-      - uses: actions-rs/cargo@v1
+      - uses: jetli/trunk-action@v0.5.0
         with:
-          command: install trunk
+          version: 'latest'
+      - name: Execute CLI command
+        run: |
+          trunk build
