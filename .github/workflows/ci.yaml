@@ -22,3 +22,6 @@ jobs:
         with:
           command: clippy
           args: --all-targets --all-features
+      - uses: actions-rs/cargo@v1
+        with:
+          command: install trunk
