@@ -25,6 +25,9 @@ jobs:
       - name: Install Trunk
         run: |
           cargo install trunk
+      - name: Adding wasm core
+        run: |
+          rustup target add wasm32-unknown-unknown
       - name: Trunk build
         run: |
           trunk build
