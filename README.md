@@ -5,6 +5,8 @@
 This repo is supposed to be an example project, for people looking into building frontend apps using Rust,
 and its framework Yew.
 
+You can check the demo on that link: [DEMO](http://yew-ascii-generator.s3-website-us-west-2.amazonaws.com/)
+
 Yew is a modern Rust framework for creating frontend web apps with WebAssembly. It features 
 a component-based architecture similar to React or Elm, using a virtual DOM implementation for efficient rendering and 
 updating of the user interface.
