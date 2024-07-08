@@ -22,6 +22,9 @@ jobs:
         with:
           command: clippy
           args: --all-targets --all-features
-      - name: Execute CLI command
+      - name: Install Trunk
         run: |
           cargo install trunk
+      - name: Trunk build
+        run: |
+          trunk build
