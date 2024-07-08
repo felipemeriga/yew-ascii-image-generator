@@ -1,7 +1,8 @@
 name: Push Event Workflow
 
 on:
-  push:
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
 
 # Make sure CI fails on all warnings, including Clippy lints
 env:
